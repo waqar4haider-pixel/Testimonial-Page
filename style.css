@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAF9;
+    font-family: "Sora", sans-serif;
+    color: #18181B;
+    padding: 2rem 1rem 2rem;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding: 2rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.star-image img {
+    width: 100px;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #52525A;
+}
+
+.checklist {
+    display: flex;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.checklist p {
+    font-size: 0.875rem;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    line-height: 2rem;
+    padding: 2rem;
+}
+
+.upper-container {
+    background-color: #ffffff;
+    border-radius: .5rem;
+    padding: 1rem 2rem 1rem;
+    width: 350px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    margin-bottom: 2rem;
+    align-self: flex-end;
+}
+
+.ratings {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.brand {
+    margin-right: 13px;
+}
+
+.lower-container {
+    background-color: #ffffff;
+    padding: 1rem 2rem 1rem;
+    border-radius: .5rem;
+    width: 350px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+}
+
+@media (max-width:1024px) {
+    .main-container {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .left-container {
+        width: 100%;
+    }
+}
+
+@media (max-width:640px) {
+    .right-container {
+        width: 100%;
+    }
+
+    .upper-container {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .lower-container {
+        width: 100%;
+    }
+}
